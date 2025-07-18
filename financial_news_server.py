@@ -38,7 +38,7 @@ def get_company_news(ticker: str, company_name: str = None, days: int = 7) -> di
             "to": to_date,
             "language": "en",
             "sortBy": "relevancy",
-            "apiKey": :"NEWS_API_KEY"
+            "apiKey": NEWS_API_KEY,
         }
         
         response = requests.get(url, params=params)
